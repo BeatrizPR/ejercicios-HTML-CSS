@@ -1,0 +1,60 @@
+
+body {font-family: Arial, Verdana, sans-serif;
+		background-color: rgb(252,191,162);}
+
+#wrapper {width: 970px;
+			margin: 0 auto;
+			}
+#header {background-image: url(imagenes/header.jpg);
+			height: 225px;}
+#titulo {position: relative;
+			top: 90px;
+			left: 30px;
+			font-size: 20px;
+			font-weight: bold;
+			color: rgb(208,71,37);}
+
+#nav {width: 200px;
+		height: 500px;
+		background-color: rgb(180,219,220);
+	 	float: left;
+	 	border-right: 5px solid rgb(2,163,191);
+	 	text-align: center;
+	 	font-weight: bold;}
+#nav a {color: rgb(0,60,70);
+		text-decoration: none;
+		}
+#nav a:hover {color: rgb(208,71,37); }
+	 /** añadimos un borde de 3 px, entonces habra que quitar los pixeles de la caja main para que no se mueva del sitio el main*/
+#main{width: 735px;
+	height: 500px;
+	background-color: #fff;
+	float: left;
+	text-align: justify;
+	color: rgb(0,60,70);
+	padding:0 15px;}
+	/** Si pongo padding, hay que descontarlo del with, hay que quitar del ancho.
+	De 765 hay que quitarle 30 px, hay que descontar 15, en este caso, de derecha y de izquieda y ponemos 0 en pading para la derecha e izquierda*/
+#main h2 {text-align: center;
+			color: rgb(208,71,37);}
+
+#main p {text-indent: 30px;}
+/** El text indent - lo usamos para que al principio de cada linea haya una indentacion, un espacio*/
+#main img.izquierda {float: left;
+					margin:7px; }
+
+#main img.derecha {float: right;
+					margin:7px; }
+
+#footer {clear: both;
+		/** Usamos el clear para limpiar los apalimientos del float, si no usamos el clear no podemos poner el footer, aparecería
+		debajo, entonces limpiamos todo, para que lo que usemos después no siga el formato*/
+		/**height: 70px; usamos el height para ver el footer antes de que hubiese texto y entonces colocamos
+		los 20 px del padding para que deje ese espacio entre el texto */
+		background-color:rgb(2,163,191);
+		text-align: center;
+		font-size: 75%;
+		font-weight: bold; 
+		padding: 15px;}
+
+

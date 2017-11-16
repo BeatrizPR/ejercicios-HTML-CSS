@@ -1,0 +1,52 @@
+
+		body {background-image: url(imagenes/tile-sky2.jpg);
+				font-family: 'Kalam', cursive;}
+
+			/**Colocamos la imagen tile de fondo en este caso */
+		#wrapper {width: 700px;
+					margin: 0 auto;
+					/**El ancho del wrapper se define, mirando el ancho de la imagen que colocamos de cabecera.
+				En este caso la imagen tiene un ancho de 700px, y ponemos ese ancho de wrapper*/
+
+				}
+		#header {	background-image: url('imagenes/header.jpg');
+					height: 140px;
+					/** ponemos la altura del header, para que aparezca*/
+					}
+		#Rotulo{position: relative;
+				top: 60px;
+				left: 500px;
+				color: white;
+				font-size: 40px;}
+		#nav, #footer { background-color: rgb(135,75,109); 
+				text-align: center;
+				padding: 6px;
+				font-weight: bold;}
+		#footer {font-family: Arial, Verdana, sans-serif;
+					font-size: 70%;}
+		#main {	background-image: url(imagenes/tile.jpg);
+				color: white;
+				padding: 15px;
+				/**padding para que el texto no este pegado al fondo gris, que haya una separación*/
+				text-align: justify;
+				}
+		#titulo{ color: lightblue;
+				text-align: center;
+				font-size: 1.5em;
+				padding: 10px;
+				 }
+		/** No ponemos el footer así, porque es exactamente igual que en el nav, entonces ponemos arriba footer y no hace falta
+		ponerlo separado
+		#footer{background-color: rgb(135,75,109);
+				text-align: center;} */
+
+		p{text-indent: 1.5em;
+		/**el text-indent lo usamos para que los parrafos empiecen dejando un espacio*/
+		}
+		img{margin: 8px;}
+			/** Usamos el nav con el estilo del enlace*/
+		#nav a {color: black;
+			text-decoration: none;}
+			/** Con el a:hover y poner el color en blanco, pone el enlace en blanco cuando pasas el ratón por encima*/
+		#nav a:hover {color: white;}
+		#nav a:visited {}
