@@ -1,0 +1,203 @@
+<!DOCTYPE>
+<html>
+<head>
+<title>Pesadilla antes de Navidad</title>
+<link rel="shortcut icon" href="favicon.ico" type="favicon/ico" />
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta http-equiv="content-type" content="application/xhtml+xml; charset=UTF-8">
+<link href="https://fonts.googleapis.com/css?family=Griffy" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Nosifer" rel="stylesheet"> 
+<link href="https://fonts.googleapis.com/css?family=Jim+Nightshade" rel="stylesheet"> 
+<style type="text/css">
+  body {background-color: rgb(67,61,63);}
+  #wrapper { width:100%;
+              height: 150%;
+              margin: 0 auto; 
+              position: relative;
+              background-image: url("jackfondo.jpg");
+              background-repeat: no-repeat;
+              font-family: 'Griffy', cursive,'Jim Nightshade', cursive, 'Nosifer', cursive,}
+  h1 { text-align: center;
+      position: relative;
+      left: 5%;
+      font-family: 'Nosifer', cursive, 'Jim Nightshade', cursive;
+      color: #FB8604;
+      font-size: 3em;}
+  #invitacion {position:relative;
+        top: 10%;
+        left:70%;
+        width:25%;
+        color: rgb(251,134,4);
+        font-size: 2em;
+        font-family: 'Griffy', cursive;
+        text-align: center;
+        padding: 2%;
+        border: 2% solid rgb(32,43,18);
+        border-radius: 20%;
+        background-color: rgba(32,43,18, 0.7);
+        visibility: hidden;}   
+  #calabazagif {position: relative;
+              top:20%;
+              left:30%;
+              visibility:hidden;}
+  #calabazas {width:45%;
+              height:35%;
+           /** background-color: white; */
+              position: relative;
+              bottom: 30%;
+              left:7%;} 
+
+  
+  #fantasma {position: relative;
+              top:20%;
+              left:70%;
+              visibility:hidden;
+              } 
+  #tumbas {position: relative;
+            width:30%;
+            height:28%;
+           /**background-color: white; */
+             bottom: 65%;
+             left:70%;
+              }
+  #mensaje {position: relative;
+            z-index: 5;
+            width:33%;
+            height:18%;
+            bottom: 33%;
+            left:7%;
+            /**background-color: pink; */
+            font-family:'Jim Nightshade', cursive;
+            font-size: 1.8em;
+            text-align: justify;
+            color: white;
+            padding: 2%; } 
+  #Jack { position: relative;
+            width:8%;
+            height:24%;
+            bottom: 138%;
+            left:53%;
+            /**background-color: pink;*/  }
+  #espiral {position: relative;
+            width:10%;
+            height:17%;
+            bottom: 160%;
+            left:48%;
+            /**background-color: pink;*/ }
+  #jackbajando {position: absolute;
+              z-index: 10;
+              width:100%;
+              height: 110%;
+              bottom: 2px;
+              left: 1px;
+              margin: 0 auto;
+              visibility:hidden;}
+  #segundomensaje {position: relative;
+            z-index: 5;
+            width:20%;
+            height:18%;
+            bottom: 95%;
+            left:53%;
+            /**background-color: pink; */
+            font-family:'Jim Nightshade', cursive;
+            font-size: 1.7em;
+            text-align: center;
+            color: white;
+            padding: 2%;}
+  #volverinicio{position: relative;
+            width:27%;
+            height:1%;
+            bottom: 100%;
+            left:37%;
+            /**background-color: pink; */
+            font-family:'Jim Nightshade', cursive;
+            font-size: 1.7em;
+            text-align: center;
+            color: white;
+            padding: 2%;}
+  #autor {width:10%;
+          height:2%;
+          background-color: rgb(251,134,4); 
+          position: relative;
+          z-index: 5;
+          bottom: 100%;
+          left:90%;
+          font-family: 'Griffy', cursive;
+          font-size: 1.3em;
+          text-align: center;
+          border: 2px solid rgb(247,231,212);
+          border-radius: 50px;}
+
+  
+    
+    
+</style>
+
+<script>
+      function mostrar (elemento) { el=document.getElementById(elemento); el.style.visibility="visible";}
+      function ocultar (elemento) { el=document.getElementById(elemento); el.style.visibility="hidden";}
+      function sonar (elemento) {
+         var audio = document.getElementById(elemento);
+             audio.play();}
+      function pausar(elemento) { 
+        var audio = document.getElementById(elemento); 
+        audio.pause();}
+                   
+ </script>
+</head>
+<body onload="sonar('EstoEsHalloween')">
+  <div id="wrapper" >  
+  
+    <audio id="EstoEsHalloween" preload="auto">
+        <source src="pesadilla.mp3"></source>
+        Este navegador no puede reproducir audio nativo
+    </audio>
+
+ <audio id="sonidocalabaza" preload="auto">
+        <source src="sonidocalabaza.mp3"></source>
+    </audio>
+
+
+    <audio id="presenciafantas" preload="auto">
+        <source src="presenciafantas.mp3"></source>
+    </audio>
+     
+   
+    <h1>Fiesta de Halloween</h1>
+    <p id="invitacion">Ven a mi fiesta el 31<br>
+    Hora: 22:00<br>
+    Lugar: Calle Marie Curie, nº10, Málaga </p>
+    
+    
+    <img id="calabazagif" src="calabazagif.gif" >
+    
+    <img id="fantasma" src="fantasma.gif" >
+
+    <img id="jackbajando" src="jackbajando.gif" >
+    
+  <div id="mensaje"> 
+    <p>No te acerques a las calabazas,ni a las tumbas.<br>
+      ¡Es peligroso!<br>
+      <br>
+    <strong>Pincha sobre Jack</strong></p>
+  </div>
+
+    <div id="calabazas" onmouseover="pausar('EstoEsHalloween');sonar('sonidocalabaza');mostrar('calabazagif');" onmouseout="ocultar('calabazagif');pausar('sonidocalabaza');sonar('EstoEsHalloween')">
+    </div>
+    <div id="tumbas" onmouseover="pausar('EstoEsHalloween');sonar('presenciafantas');mostrar('fantasma');" onmouseout="ocultar('fantasma'); pausar('presenciafantas');sonar('EstoEsHalloween')">
+    </div>
+
+    <div id="Jack" onclick="mostrar('invitacion')">
+    </div>
+    <div id="segundomensaje">Para terminar, pincha sobre la espiral</div>
+    <div id="espiral"onclick="mostrar('jackbajando')">
+    </div>
+    <div id="volverinicio">Para volver al inicio, pulsa sobre el autor</div>
+
+    <div id="autor"onclick="ocultar('jackbajando')">
+    <small>Autor: Beatriz</small>
+    </div>
+   
+   </div>
+</body>
+</html>

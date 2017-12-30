@@ -1,0 +1,78 @@
+
+		* {margin: 0px;
+			padding: 0px;}
+		body{ background-color: rgb(238,238,238);
+				font-family: Verdana; }
+		#wrapper{ width: 1000px;
+					margin: 0 auto;
+					border: 2px solid rgb(30,0,138);
+				}
+		header { background-image: url(imagenes/header.jpg);
+				height: 222px; /** ponemos la altura, sino no aparece la imagen de cabecera*/
+				border-bottom: 2px solid rgb(0,0,0);
+				
+				}
+		#rotulo{position: relative;
+				top: 170px;
+				left: 500px;
+				font-size: 2em;
+				font-weight: bold;
+				color: white;
+				}
+		nav {width: 188px;
+			height: 610px;
+			float: left; /**para que quede pegado a la izquierda, rectangulo de la izquierda*/
+			background-color: rgb(231,228,255);
+			border-right: 2px solid rgb(0,0,0);
+			font-weight: bold;
+			color: rgb(84,44,78);
+			font-size: 1em;
+			}
+		/**nav ul {padding:26px;
+				list-style-image: url(imagenes/flormalva2.jpg);}*/
+		nav a {text-decoration: none;
+				
+				}
+		nav ul {padding: 20px;
+				list-style: none;}
+		nav a:hover {color: brown;}
+		nav p {padding-left: 10px;}
+		main {width: 800px;
+				height: 600px;
+				background-color: white;
+				position: relative;
+				float: left;
+				font-size: 12px;
+				text-indent: 1.8em;
+				text-align:justify;
+				margin: 5px;
+				}
+		main h1 {color: rgb(30,0,138);
+				text-align: center;
+				padding-top: 20px;}
+		nav #recuadro {background-color: white;
+						color: rgb(160,98,81);
+						clear: both;  /**PONEMOS EL CLEAR BOTH PARA QUE NO FALLE NADA DESPUES DE COLOCAR EL FLOAT  */
+						text-align: center;
+						border-radius: 10px;
+					}
+		table {margin: 8px;
+
+				}
+		td { width: 200px; 
+			text-indent: 1.8em;
+			text-align: center;
+			}
+		td img {border-radius: 40px;}
+		footer {clear: both; /** Ponemos ara limpiar y que aparezcan correctamente los rectangulos*/
+				background-image: url(imagenes/mar2.jpg);
+				background-repeat: repeat;
+                background-position: center;
+                border-top: 1px solid #000;
+                text-align: center;
+                font-size: 1em;
+                font-weight: bold;
+                color: white;
+		}
+		
+	
