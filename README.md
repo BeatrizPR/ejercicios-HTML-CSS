@@ -5,6 +5,7 @@ Prácticas con HTML y CSS
 
 Aquí subiré distintos ejercicios que vaya realizando a lo largo del curso con lenguajes como HTML5 y CSS.
 
+Dejo aquí un octogato y el enlace &#128515;:
 
 <img src="notocat.jpg" width="240px">
 
