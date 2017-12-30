@@ -7,4 +7,4 @@ Aquí subiré distintos ejercicios que vaya realizando a lo largo del curso con 
 
 
 <img src="notocat.jpg" width="240px">
-[Esto no es un octogato](https://octodex.github.com/notocat)
+* [Esto no es un octogato] (https://octodex.github.com/notocat)
