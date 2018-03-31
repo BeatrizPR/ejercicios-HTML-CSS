@@ -1,10 +1,11 @@
-# ejercicios-HTML-CSS
+﻿# ejercicios-HTML-CSS
 Prácticas con HTML y CSS
 
 **Ejercicios de la asignatura Lenguajes de marcas y sistemas de gestion de información de primero de DAW.**
 
 Aquí subiré distintos ejercicios que vaya realizando a lo largo del curso con lenguajes como HTML5 y CSS.
 
+Dejo aquí un octogato y el enlace &#128515;:
 
 <img src="notocat.jpg" width="240px">
 

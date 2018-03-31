@@ -1,0 +1,453 @@
+body {background-color: rgb(255,201,147);
+				font-family: 'Kalam', cursive;
+
+				}
+
+			/**Colocamos la imagen tile de fondo en este caso */
+		#wrapper {width: 1145px;
+					margin: 0 auto;
+				/** La imagen tiene un ancho de 700px, y ponemos ese ancho de wrapper*/
+
+				}
+		header {background-image: url(imagenes/header.jpg);
+				height: 152px;    /** ponemos la altura del header, para que aparezca*/
+				padding-top: 40px;
+				 }
+					
+		#rotulo{position: relative;
+				top: 60px;
+				left: 380px;
+				color: white;
+				font-size: 40px;
+				}
+		nav, footer { background-color: rgb(253,139,96); 
+				text-align: center;
+				padding: 6px;
+				font-weight: bold;
+				height: 40px;
+				display: block;
+				clear: both;
+				}
+		nav {/**white-space: pre-wrap;*/
+			letter-spacing: 4px;
+			text-align: center;
+			height: auto; /*Junto a overflow: hidden; aplicará a nuestro elemento nav el mismo alto que el más alto de sus elementos hijos */
+			overflow: hidden; 
+			width: 100%;
+			left: 0;
+			top: 0;
+			position: fixed;
+			z-index: 1000;
+			}
+		nav ul li { /**background-color: rgb(255,176,98); 
+					border: 1px solid #876823; */
+					display: inline-block; 
+					padding: 0 7px; 
+					margin: 0 5px;
+					list-style-type: none;
+		 }
+		nav a {color: black;
+			text-decoration: none;
+			}
+			/** Con el a:hover y poner el color en blanco, pone el enlace en blanco cuando pasas el ratón por encima*/
+		nav a:hover {color: white;}
+		nav a:visited {}
+
+		#nav2 {
+				width: 145px;
+				position: fixed;  /* Quitar la posicion fixed para que sea responsive*/
+				float: right;
+				margin-right: 1px;
+				right: 102px;
+				border: 2px solid rgb(253,139,96);
+				text-align: center;
+				z-index: 900;
+				}
+		
+		.redes {width: 40px;
+					height: 40px;}
+		
+		main {	color: black;
+				padding: 14px;
+				width: 965px;
+				background-color: rgb(255,201,147);
+				/**padding para que el texto no este pegado al fondo, que haya una separación*/
+				text-align: justify;
+				padding-top: 65px;    /** ponemos este padding, para que el nav no tape el contenido del main*/
+				float: left;
+
+				}
+		main h2 {text-align: center;}
+		
+		
+
+		p{text-indent: 1.5em;
+		/**el text-indent lo usamos para que los parrafos empiecen dejando un espacio*/
+		}
+		img{margin: 8px;}
+			/** Usamos el nav con el estilo del enlace*/
+		#izquierda {width: 48%;
+					float: left;
+					margin-right: 2%;
+				}
+		#derecha{ width: 48%;
+					float: left;
+					margin-left: 2%;
+						 }
+
+		#izquiSuperior {
+						position: relative;
+						padding: auto;
+						z-index: 10;
+						text-align: center;}
+		#derechaSuperior {
+							position: relative;
+							padding-bottom: 10px;
+							padding-left: 2px;
+							z-index: 10;
+							text-align: center;
+							}
+		#derechaSuperior img {text-align: center;
+							}
+		#izquierdaMedio{
+						position: relative;
+						padding-bottom: 10px;
+						padding-left: 2px;
+						z-index: 10;
+						text-align: justify;
+						}
+		#derechaMedio{
+						position: relative;
+						padding-bottom: 10px;
+						padding-left: 2px;
+						z-index: 10;
+						text-align: justify;
+						}
+		#izquierdaBajo{
+						position: relative;
+						padding-bottom: 10px;
+						padding-left: 2px;
+						z-index: 10;
+						text-align: center;
+						}
+		#derechaBajo{
+						position: relative;
+						padding-bottom: 10px;
+						padding-left: 2px;
+						z-index: 10;
+						text-align: center;
+						}
+		#accesoBlog{
+						position: relative;
+						padding-bottom: 10px;
+						padding-left: 2px;
+						z-index: 10;
+						text-align: center;
+						}
+		main a { text-decoration: none; }
+		main a:hover {color: rgb(253,139,96);}
+		hr { border-top: 1px solid rgb(253,109,55);}
+		.seguirLeyendo {width: 20px;
+						height: 20px;}
+
+
+		/** A PARTIR DE AQUÍ   Estilo articulo cuadro del dia**/
+		#amplioSirena {width: 96%;
+						text-align: justify;
+						}
+		li #amplioSirena { list-style-type: none;}
+
+		img #amplioSirena {text-align: center;
+				}
+		/** Aqui va el estilo de la pestaña HISTORIA DEL ARTE */
+
+		.arte li {color: rgb(11,172,123);
+
+				}
+		.listanegra li {color: black;
+						}
+		.centro {text-align: center;}
+
+		/** Estilo de la página IMAGENES     SLIDER   */
+@font-face{
+	font-family: 'flexslider-icon';
+	src: url('fonts/flexslider-icon.eot');
+	src:url('fonts/flexslider-icon.eot?iefix') format('embedded-opentype'), url('fonts/flexslider-icon.woff') format('woff'), 
+	url('fonts/flexslider-icon.ttf') format('truetype'), url('fonts/flexslider-icon.svg#flexslider-icon') format('svg'); 
+	font-weight: normal; 
+	font-style: normal;
+}
+
+.flexslider{
+
+	width: 100%;
+	position: relative;
+}
+.slides{
+	overflow: hidden;
+}
+.slides img{
+	width: 100%;
+
+}
+.slides, 
+.flex-control-nav,
+.flex-direction-nav {
+	margin:0;
+	padding: 0;
+	list-style: none;
+}
+.flex-control-nav{
+	width: 100%;
+	text-align: center;
+}
+.flex-control-nav li{
+	display: inline-block;
+	margin: 0 6px;
+}
+/*Con esto damos color y redondeamos los puntos para cambiar de img
+tambien hacemos los numeros de enlace pequeños para no verlos*/
+.flex-control-nav li a{
+	display: block;
+	background: #777;
+	width: 12px;
+	height: 12px;
+	border-radius: 12px;
+	text-indent: -9999px;
+}
+/* Le ponemos un color para que cuando pase el cursor cambie de color*/
+.flex-control-nav li a:hover{
+	background-color: #2E2E2E;
+}
+/* Hacemos que se mantenga el color del último circulo pulsado*/
+.flex-control-nav li a.flex-active{
+	background-color: #2E2E2E;
+}
+/** le quitamos la decoración y subimos el texto de next y previous */
+.flex-direction-nav a{
+	display: block;
+	text-decoration: none;
+	position: absolute;
+	top: 50%;
+	z-index: 900;
+	width: 40px;
+	height: 40px;
+	overflow: hidden;
+}
+.flex-direction-nav .flex-prev{
+	left: 0;
+}
+.flex.direction-nav .flex-next{
+	right: 0;
+}
+.flex-direction-nav a:before{
+	font-family: "flexslider-icon";
+	font-size: 40px;
+	display: inline-block;
+	content: "\f001";
+	color: #fff;
+	text-shadow: 1px 1px 0 rgba(255,255,255,0.3);
+}
+.flex.direction-nav a.flex-prev:before{
+	content: "\f001";
+}
+.flex-direction-nav a:before{
+	font-family: "flexslider-icon";
+	font-size: 40px;
+	display: inline-block;
+	content: "\f002";
+	color: #fff;
+	text-shadow: 1px 1px 0 rgba(255,255,255,0.3);
+}
+.flex.direction-nav a.flex-next:before{
+	content: "\f002";
+}
+.flexslider:hover .flex-direction-nav .flex-prev{
+	opacity: 0.7;
+	left: 10px;
+}
+.flexslider:hover .flex-direction-nav .flex-prev:hover{
+	opacity: 1
+}
+.flexslider:hover .flex-direction-nav .flex-next{
+	opacity: 0.7;
+	right: 10px;
+}
+.flexslider:hover .flex-direction-nav .flex-next:hover{
+	opacity: 1;
+}
+		
+
+
+
+		/**Estilo del FORMULARIO*/
+
+		#formulario a{
+					  display:block;
+					  color:#ad5482;  
+					  text-decoration:none;
+					  font-weight:bold;
+					  margin-top:40px;
+					  text-align:center;
+					}
+
+		#formulario{
+					  position:relative;
+					  top:20px;
+					  height:600px;
+					  width:800px;
+					  background-size:cover;
+					  margin-left:auto;
+					  margin-right:auto; 
+					}
+
+		.module{
+				  position:relative;
+				  top:2%;    
+				  height:70%;
+				  width:450px;
+				  margin-left:auto;
+				  margin-right:auto;
+				  border-radius:5px;
+				  background:RGBA(255,255,255,1);
+				    
+				  -webkit-box-shadow:  0px 0px 15px 0px rgba(0, 0, 0, .45);        
+				  box-shadow:  0px 0px 15px 0px rgba(0, 0, 0, .45);
+				  
+				}
+
+		.module ul{
+				  list-style-type:none;
+				  margin:0;
+				}
+
+		.tab{
+			  float:left;
+			  height:60px;
+			  width:25%;
+			  padding-top:20px;
+			  box-sizing:border-box;
+			  background:#eeeeee;  
+			  text-align:center;
+			  cursor:pointer;
+			  transition:background .4s;
+			}
+
+		.tab:first-child{  
+						  -webkit-border-radius: 5px 0px 0px 0px;
+						  border-radius: 5px 0px 0px 0px;
+						}
+
+		.tab:last-child{  
+						  -webkit-border-radius: 0px 5px 0px 0px;
+						  border-radius: 0px 5px 0px 0px;
+						}
+
+		.tab:hover{  
+				  background-color:rgba(0,0,0,.1);
+				}
+
+		.activeTab{
+				  background:#fff;
+				}
+
+		.activeTab .icon{
+						  opacity:1;
+						}
+
+		.icon{
+			  height:24px;
+			  width:24px;
+			  opacity:.2;
+			}
+
+		.form{
+			  float:left;
+			  height:86%;
+			  width:100%;
+			  box-sizing:border-box;
+			  padding:40px;
+			}
+
+		.textbox{
+				  height:50px;
+				  width:100%;
+				  border-radius:3px;
+				  border:rgba(0,0,0,.3) 2px solid;
+				  box-sizing:border-box;
+				  padding:10px;
+				  margin-bottom:30px;
+				}
+		.ciudad select {
+						font-family:helvetica;
+						font-size: 17px;
+						background-color:#f0f0f0;
+						height:42px;
+						width:85%;
+						text-align: center;
+						border-radius:3px;
+						border:rgba(0,0,0,.3) 2px solid;
+						box-sizing:border-box;
+						padding:5px;
+						margin-bottom:15px;
+				}
+		.sexo select {
+						font-family:helvetica;
+						font-size: 17px;
+						background-color:#f0f0f0;
+						height:42px;
+						width:85%;
+						text-align: center;
+						border-radius:3px;
+						border:rgba(0,0,0,.3) 2px solid;
+						box-sizing:border-box;
+						padding:5px;
+						margin-bottom:15px;
+				}
+		.suscripcioncorreo label {
+									font-family:helvetica;
+									font-size: 17px;
+									background-color:#f0f0f0;
+									height:42px;
+									width:90%;
+									text-align: center;
+									border-radius:3px;
+									border:rgba(0,0,0,.3) 2px solid;
+									box-sizing:border-box;
+									padding:5px;
+									margin-bottom:15px;
+							}
+		.suscripcioncorreo input {
+									background-color:#f0f0f0;
+									border-radius:3px;
+									border:rgba(0,0,0,.3) 2px solid;
+									box-sizing:border-box;
+							}
+
+
+		.textbox:focus{
+					  outline:none;
+					   border:rgba(24,149,215,1) 2px solid;
+					   color:rgba(24,149,215,1);
+					}
+
+		.button{
+				  height:50px;
+				  width:100%;
+				  border-radius:3px;
+				  border:rgba(0,0,0,.3) 0px solid;
+				  box-sizing:border-box;
+				  padding:10px;
+				  margin-bottom:30px;
+				  background: rgb(253,139,96);
+				  color:#FFF;
+				  font-weight:bold;
+				  font-size: 12pt;
+				  transition:background .4s;
+				  cursor:pointer;
+				}
+
+		.button:hover{
+					  background:rgb(253,105,49);
+					  
+					}
