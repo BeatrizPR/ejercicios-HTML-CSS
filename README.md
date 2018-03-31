@@ -37,3 +37,28 @@ Dejo aquí un octogato y el enlace &#128515;:
 
 <img src="capturas/6.jpg" width="880px">
 [6]
+
+### Noticias
+
+<img src="capturas/7.jpg" width="880px">
+[7]
+
+### Enlaces
+
+<img src="capturas/8.jpg" width="880px">
+[8]
+
+### Contacto
+
+<img src="capturas/9.jpg" width="880px">
+[9]
+
+<img src="capturas/10.jpg" width="880px">
+[10]
+
+<img src="capturas/11.jpg" width="880px">
+[11]
+
+<img src="capturas/12.jpg" width="880px">
+[12]
+
